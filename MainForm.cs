@@ -425,11 +425,11 @@ namespace OpenTrace
         private void StartTracerouteButton_Click(object sender, EventArgs e)
         {
             
-            if(protocolSelection.SelectedValue.ToString() != "ICMP" && RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
-            {
-                MessageBox.Show(Resources.WINDOWS_TCP_UDP_UNSUPPORTED);
-                return;
-            }
+            // if(protocolSelection.SelectedValue.ToString() != "ICMP" && RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            // {
+            //     MessageBox.Show(Resources.WINDOWS_TCP_UDP_UNSUPPORTED);
+            //     return;
+            // }
             if (CurrentInstance != null)
             {
                 StopTraceroute();
